@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+.volkhov {
+  font-family: "Volkhov", serif;
+}
+
+.stack > div {
+  max-width: 80%;
+}
+
+.stack > aside:nth-child(2) {
+  transform: translate(50px, 50px);
+  z-index: -1;
+}
+.stack > aside:nth-child(3) {
+  transform: translate(100px, 100px);
+  z-index: -2;
+}
+.stack > div:not(:first-child) {
+  box-shadow: none;
+  border: 1px solid #ddd;
+}
