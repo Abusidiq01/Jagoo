@@ -14,7 +14,7 @@
 
   <!-- HEADER -->
 
-  <header class="flex items-center justify-between container mx-auto py-5 px-[5%]">
+  <header class="flex items-center justify-between container mx-auto py-5 px-[5%] header">
     <div>
       <img src="./images/Jadoo.svg" alt="logo">
     </div>
@@ -27,8 +27,22 @@
       <a href="" class="border py-1 px-4 border-gray-600 rounded-md">Sign Up</a>
       <a href="">EN</a>
     </nav>
-    <ion-icon name="menu-outline" class="text-2xl cursor-pointer lg:hidden"></ion-icon>
+
+    <div class="relative lg:hidden">
+      <ion-icon name="menu-outline" class="text-2xl cursor-pointer ">
+    </ion-icon>
+    <input type="checkbox" class="absolute inset-0 appearance-none">
+    </div>
   </header>
+  <nav class="mobile-nav fixed bg-white/80 inset-0 z-[100] translate-x-full transition-all top-20 backdrop-blur-md flex flex-col items-center justify-center gap-10 text-xl">
+    <a href="" class="hover:underline">Destination</a>
+    <a href="">Hotels</a>
+    <a href="">Flight</a>
+    <a href="">Bookings</a>
+    <a href="">LogIn</a>
+    <a href="" class="border py-1 px-4 border-gray-600 rounded-md">Sign Up</a>
+    <a href="">EN</a>
+  </nav>
 
   <!-- HERO SECTION -->
 
@@ -96,8 +110,7 @@
     <p class="text-center lext-lg text-[#5e6282]">CATEGORY</p>
     <h2 class="text-center volkhov text-3xl font-medium my-5 max-w-[800px] mx-auto leading-relaxed text-[#181E4B] capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe mollitia voluptates autem.</h2>
 
-    <div class="grid lg:grid-cols-[repeat(4,_1fr)] lg:grid-rows-[repeat(1,_350px)] md:grid-cols-[repeat(2,_1fr)] md:grid-rows-2 sm:grid-cols-[repeat(1,_1fr)] sm:grid-rows-4
- justify-center items-center gap-15 mt-10 lg:mt-14 md:mt-14">
+    <div class="grid lg:grid-cols-[repeat(4,_1fr)] lg:grid-rows-[repeat(1,_350px)] md:grid-cols-[repeat(2,_1fr)] md:grid-rows-2 sm:grid-cols-[repeat(1,_1fr)] sm:grid-rows-4 justify-center items-center gap-15 mt-10 lg:mt-14 md:mt-14">
       <aside class="bg-white rounded-3xl shadow-xl text-center p-8 px-10 flex flex-col items-center gap-5">
         <img src="./images/weather.svg" class="size-20">
         <h3 class="font-medium text-lg">Calculated Weather</h3>
@@ -152,7 +165,7 @@
         </aside>
       </div>
 
-      <div class="bg-white shadow-2xl rounded-2xl overflow-">
+      <div class="bg-white shadow-2xl rounded-2xl">
         <img src="./images/europe.jpg" class="w-full aspect-square object-cover/top">
         <aside class="flex items-center justify-between p-5 text-lg">
           <p>Rome, Italy</p>
@@ -244,7 +257,7 @@
     </div>
   </section> -->
 
-  <section class="container mx-auto px-[5%] my-10 grid grid-cols-1 lg:grid-cols-5 gap-20 p-20">
+  <section class="container mx-auto px-[5%] my-10 grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-20 p-20">
     <div class="h-80 lg:col-span-2">
       <aside class="flex flex-col gap-14">
         <div>
@@ -257,23 +270,23 @@
       </aside>
     </div>
 
-    <div class="relative lg:col-span-3 stack">
+    <div class="h-80 relative lg:col-span-3 stack">
 
-      <aside class="w-[80%] h-60 rounded-xl top-0 left-0 bg-white absolute shadow-xl flex flex-col gap-1 p-7" data-offset="0">
+      <aside class="w-[80%] h-70 lg:h-60 rounded-xl top-0 left-0 bg-white absolute shadow-xl flex flex-col gap-1 p-5 lg:p-7">
         <img src="./images/mike-.svg" alt="" class="absolute top-0 left-0 z-50 -translate-y-1/2 -translate-x-1/2">
         <p class="mb-16 leading-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sit dolorum repellat omnis, temporibus commodi esse, minus voluptatibus, aliquam officiis harum. Cum expedita</p>
         <h4 class="font-medium">Mike Taylor</h4>
         <p>Lahore, Pakistan</p>
       </aside>
 
-      <aside class="w-[80%] h-60 rounded-xl top-0 left-0 bg-white absolute shadow-xl flex flex-col gap-1 p-10" data-offset="2">
+      <aside class="w-[80%] h-70 lg:h-60 rounded-xl top-0 left-0 bg-white absolute shadow-xl flex flex-col gap-1 p-5 lg:p-7 pr-3">
         <img src="./images/mike-.svg" alt="" class="absolute top-0 left-0 z-50 -translate-y-1/2 -translate-x-1/2">
         <p class="mb-16 leading-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sit dolorum repellat omnis, temporibus commodi esse, minus voluptatibus, aliquam officiis harum. Cum expedita</p>
         <h4 class="font-medium">Mike Taylor</h4>
         <p>Lahore, Pakistan</p>
       </aside>
       
-      <aside class="w-[80%] h-60 rounded-xl top-0 left-0 bg-white absolute shadow-xl flex flex-col gap-1 p-7" data-offset="3">
+      <aside class="w-[80%] h-70 lg:h-60 rounded-xl top-0 left-0 bg-white absolute shadow-xl flex flex-col gap-1 p-5 lg:p-7">
         <img src="./images/mike-.svg" alt="" class="absolute top-0 left-0 z-50 -translate-y-1/2 -translate-x-1/2">
         <p class="mb-16 leading-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sit dolorum repellat omnis, temporibus commodi esse, minus voluptatibus, aliquam officiis harum. Cum expedita</p>
         <h4 class="font-medium">Mike Taylor</h4>
@@ -300,6 +313,8 @@
     </div>
   </section>
 
+  <!-- SUBSCRIBE -->
+
   <section class="container w-[80%] flex flex-col gap-10 mx-auto px-[5%] my-5 h-80 bg-[#DFD7F9] justify-center rounded-tl-4xl lg:rounded-tl-[120px] relative">
     <img src="./images/bottom.svg" alt="" class="absolute bottom-0 -left-16">
     <img src="./images/right.svg" alt="" class="absolute lg:top-0 top-5 right-0">
@@ -315,6 +330,49 @@
         <button type="submit" class="bg-[#FF7D68] text-white p-2 rounded px-4 cursor-pointer">Subscribe</button>
       </aside>
     </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <section class="w-auto mx-[7%] py-10 grid-cols-[repeat(1,_1fr)] grid-rows-[repeat(5,_300px)] grid lg:grid-cols-[repeat(5,_2fr)] lg:grid-rows-[repeat(1,_250px)] md:grid-cols-[repeat(3,_2fr)] md:grid-rows-[repeat(2,_250px)] lg:gap-2">
+
+    <div class="flex flex-col items-start">
+      <img src="./images/Jadoo2.svg" alt="" class="size-32 -mb-4">
+      <p class="text-[#5E6282]">Book your trip in minute, get full Control for much longer.</p>
+    </div>
+    <div class="flex flex-col gap-10 p-10">
+      <h3 class="font-bold">Company</h3>
+      <aside class="flex flex-col gap-1 list-none">
+        <li><a href="" class="font-medium text-[#5E6282]">About</a></li>
+        <li><a href="" class="font-medium text-[#5E6282]">Careers</a></li>
+        <li><a href="" class="font-medium text-[#5E6282]">Mobile</a></li>
+      </aside>
+    </div>
+    <div class="flex flex-col gap-10 p-10">
+      <h3 class="font-bold">Contact</h3>
+      <aside class="flex flex-col gap-1 list-none">
+        <li><a href="" class="font-medium text-[#5E6282]">Help/FAQ</a></li>
+        <li><a href="" class="font-medium text-[#5E6282]">Press</a></li>
+        <li><a href="" class="font-medium text-[#5E6282]">Afiliates</a></li>
+      </aside>
+    </div>
+    <div class="flex flex-col gap-10 p-10">
+      <h3 class="font-bold">More</h3>
+      <aside class="flex flex-col gap-1 list-none">
+        <li><a href="" class="font-medium text-[#5E6282]">Airlinefees</a></li>
+        <li><a href="" class="font-medium text-[#5E6282]">Careers</a></li>
+        <li><a href="" class="font-medium text-[#5E6282]">Low fare tips</a></li>
+      </aside>
+    </div>
+    <div class="flex flex-col p-10">
+      <img src="./images/Social.svg" alt="" class="size-32">
+      <p class="text-[#5E6282] p-2">Discover Our App</p>
+      <aside class="flex gap-2">
+        <img src="./images/Play Store.svg" alt="" class="size-16">
+        <img src="./images/Google Play.svg" alt="" class="size-16">
+      </aside>
+    </div>
+    
   </section>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
